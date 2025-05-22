@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hacienda Suytunchen - Tu Lugar Mágico para Bodas en Yucatán</title>
+    <meta name="description" content="Hacienda Suytunchen: El escenario perfecto para bodas inolvidables y eventos especiales en Yucatán. Descubre nuestros paquetes nupciales, hermosos jardines y salones coloniales.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f7f7f7; /* Light background for the overall page */
+        }
+        .header-bg {
+            background-color: #8c453a; /* Dark red/brown from original site */
+        }
+        .nav-link {
+            color: #555555;
+            transition: color 0.3s ease;
+        }
+        .nav-link:hover {
+            color: #999999;
+        }
+        .hero-section {
+            /* Using a reference image from the original site's slider */
+            background-image: url('https://suytunchenhacienda.com/wp-content/uploads/2019/04/FACTORIA-SUYTUNCHEN57.jpg');
+            background-size: cover;
+            background-position: center;
+            min-height: 600px;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+        }
+        .section-heading {
+            color: #333333;
+            font-family: 'Roboto', sans-serif;
+        }
+        .delimiter {
+            width: 80px;
+            height: 3px;
+            background-color: #8c453a;
+            margin: 15px auto 0; /* Centered delimiter */
+        }
+        .footer-bg {
+            background-color: #8c453a;
+        }
+        .copyright-bg {
+            background-color: #000000;
+        }
+        .button-primary {
+            background-color: #8c453a;
+            border: 1px solid #8c453a;
+            color: #ffffff;
+            transition: all 0.3s ease;
+        }
+        .button-primary:hover {
+            background-color: #a35a4d;
+            border-color: #a35a4d;
+        }
+        .button-secondary {
+            background-color: transparent;
+            border: 1px solid #ffffff;
+            color: #ffffff;
+            transition: all 0.3s ease;
+        }
+        .button-secondary:hover {
+            background-color: #ffffff;
+            color: #8c453a;
+        }
+        /* Custom styles for dropdown menu */
+        .dropdown:hover .dropdown-menu {
+            display: block;
+        }
+        .dropdown-menu {
+            display: none;
+            position: absolute;
+            background-color: #ffffff;
+            min-width: 200px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1000;
+            border-radius: 0.5rem;
+            overflow: hidden;
+            top: 100%; /* Position below the parent link */
+            left: 0;
+        }
+        .dropdown-menu a {
+            color: #747474;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-transform: none; /* Submenu items usually not uppercase */
+            font-size: 14px;
+        }
+        .dropdown-menu a:hover {
+            background-color: #f8f8f8;
+            color: #333333;
+        }
+        /* WhatsApp floating button */
+        .whatsapp-float {
+            position: fixed;
+            width: 60px;
+            height: 60px;
+            bottom: 40px;
+            right: 40px;
+            background-color: #25d366;
+            color: #FFF;
+            border-radius: 50px;
+            text-align: center;
+            font-size: 30px;
+            box-shadow: 2px 2px 3px #999;
+            z-index: 100;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: transform 0.3s ease;
+        }
+        .whatsapp-float:hover {
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body class="antialiased">
+    <div class="min-h-screen flex flex-col">
+        <header class="header-bg text-white py-2">
+            <div class="container mx-auto px-4 flex justify-between items-center text-sm">
+                <div class="flex items-center space-x-4">
+                    <span><i class="fa fa-envelope mr-2"></i>info@suytunchenhacienda.com</span>
+                    <span><i class="fa fa-phone mr-2"></i>+52 999 255 7812</span>
+                    <a href="https://wa.me/529992557812?text=Hola!%20Me%20interesa%20saber%20más%20sobre%20Hacienda%20Suytunchen%20para%20un%20evento." target="_blank" class="hover:text-gray-300">
+                        <i class="fab fa-whatsapp mr-2"></i>WhatsApp
+                    </a>
+                </div>
+                <div class="flex items-center space-x-4">
+                    <span>Suytunchén, Yuc.</span>
+                    <div class="flex space-x-3">
+                        <a href="https://www.facebook.com/SuytunchenHacienda/" target="_blank" class="hover:text-gray-300"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com/suytunchenhacienda/" target="_blank" class="hover:text-gray-300"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <nav class="bg-white shadow-md py-4 sticky top-0 z-50">
+            <div class="container mx-auto px-4 flex justify-between items-center">
+                <div class="logo-box">
+                    <a href="#" class="block max-w-[250px] max-h-[175px]">
+                        <img src="https://suytunchenhacienda.com/wp-content/uploads/2019/03/logo-Suytunchen-1-1.png" alt="Hacienda Suytunchen Logo" class="w-full h-auto rounded-md">
+                    </a>
+                </div>
+                <ul class="flex space-x-6 uppercase font-semibold text-sm">
+                    <li><a href="#inicio" class="nav-link">Inicio</a></li>
+                    <li><a href="#nosotros" class="nav-link">Nosotros</a></li>
+                    <li class="relative dropdown">
+                        <a href="#bodas" class="nav-link flex items-center">Bodas <i class="fas fa-chevron-down ml-2 text-xs"></i></a>
+                        <div class="dropdown-menu">
+                            <a href="#bodas-espacios">Espacios para Bodas</a>
+                            <a href="#bodas-paquetes">Paquetes Nupciales</a>
+                            <a href="#bodas-testimonios">Testimonios de Novios</a>
+                            <a href="#bodas-faq">Preguntas Frecuentes Bodas</a>
+                        </div>
+                    </li>
+                    <li><a href="#otros-eventos" class="nav-link">Otros Eventos & Hospedaje</a></li>
+                    <li><a href="#galeria" class="nav-link">Galería</a></li>
+                    <li><a href="#contacto" class="nav-link">Contacto</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <section id="inicio" class="hero-section text-white text-left px-4 py-20 md:py-32">
+            <div class="container mx-auto">
+                <h1 class="text-5xl md:text-6xl font-bold leading-tight mb-4">Tu Boda de Ensueño en<br>Hacienda Suytunchen</h1>
+                <p class="text-lg md:text-xl mb-8 max-w-2xl">El escenario perfecto para celebrar momentos inolvidables, rodeado de historia y naturaleza en el corazón de Yucatán.</p>
+                <a href="#bodas-paquetes" class="button-primary px-8 py-3 rounded-full text-lg font-medium shadow-lg hover:shadow-xl">Descubre Nuestros Paquetes</a>
+            </div>
+        </section>
+
+        <section id="nosotros" class="py-16 md:py-24 bg-white">
+            <div class="container mx-auto px-4 flex flex-col md:flex-row items-center justify-center gap-12">
+                <div class="md:w-2/3 text-center md:text-left">
+                    <h2 class="text-3xl md:text-4xl font-bold mb-4 section-heading">Hacienda Suytunchen: Donde los Sueños se Hacen Realidad</h2>
+                    <div class="delimiter mx-auto md:mx-0 mb-8"></div>
+                    <p class="text-gray-700 leading-relaxed mb-4">A solo 30 minutos de Mérida y Progreso, Hacienda Suytunchén te espera como un verdadero oasis en Yucatán. Su nombre maya, "pozo de piedra", evoca la profunda conexión con la naturaleza y la historia que encontrarás en cada rincón.</p>
+                    <p class="text-gray-700 leading-relaxed mb-8">Con más de un siglo de historia, nuestra hacienda se ha transformado en el escenario idílico para celebrar **bodas inolvidables**, eventos especiales y ofrecer una experiencia de hospedaje única. Permítenos ser parte de tu historia, creando momentos mágicos rodeados de exuberantes jardines, arquitectura colonial y la serenidad del campo yucateco.</p>
+                    <a href="#bodas" class="button-primary px-8 py-3 rounded-full text-lg font-medium shadow-lg hover:shadow-xl">¡Planifica Tu Boda Aquí!</a>
+                </div>
+                <div class="md:w-1/3 flex justify-center">
+                    <img src="https://suytunchenhacienda.com/wp-content/uploads/2019/03/logo-Suytunchen-1-1.png" alt="Logo Hacienda Suytunchen" class="rounded-lg shadow-lg">
+                </div>
+            </div>
+        </section>
+
+        <section class="py-16 md:py-20 header-bg text-white text-center">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl md:text-4xl font-bold mb-6">La hacienda está ubicada dentro de la subcomisaría de Suytunchen</h2>
+                <a href="#contacto" class="button-secondary px-8 py-3 rounded-full text-lg font-medium shadow-lg hover:shadow-xl">Contacto</a>
+            </div>
+        </section>
+
+        <section id="bodas" class="py-16 md:py-24 bg-gray-100">
+            <div class="container mx-auto px-4 text-center">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4 section-heading">Servicios de Bodas Exclusivos</h2>
+                <div class="delimiter mx-auto mb-8"></div>
+                <p class="text-gray-700 leading-relaxed mb-8 max-w-3xl mx-auto">En Hacienda Suytunchen, te ofrecemos todo lo necesario para que tu boda sea perfecta. Desde ceremonias íntimas en nuestros jardines hasta grandes recepciones en nuestros salones, cada detalle es cuidado con esmero.</p>
+                <p class="text-gray-700 leading-relaxed mb-12 max-w-3xl mx-auto">Descubre nuestros paquetes personalizados, opciones de catering y la belleza de nuestros escenarios, diseñados para crear recuerdos que durarán toda la vida.</p>
+                <div class="flex flex-col md:flex-row justify-center space-y-4 md:space-y-0 md:space-x-8">
+                    <a href="#bodas-paquetes" class="button-primary px-8 py-3 rounded-full text-lg font-medium shadow-lg hover:shadow-xl">Ver Paquetes de Bodas</a>
+                    <a href="#contacto" class="button-primary px-8 py-3 rounded-full text-lg font-medium shadow-lg hover:shadow-xl">Agenda una Visita</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="galeria" class="py-16 md:py-24 bg-white">
+            <div class="container mx-auto px-4 text-center">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4 section-heading">Nuestra Galería de Bodas</h2>
+                <div class="delimiter mx-auto mb-8"></div>
+                <p class="text-gray-700 leading-relaxed mb-8 max-w-3xl mx-auto">Explora la magia y el encanto de las bodas que hemos celebrado en Suytunchen. Inspírate con nuestros paisajes, la elegancia de nuestras decoraciones y la alegría de cada pareja.</p>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
+                    <div class="rounded-lg overflow-hidden shadow-lg">
+                        <img src="https://suytunchenhacienda.com/wp-content/uploads/2019/04/2.jpg" alt="[Image of Boda en Jardín de la Hacienda]" class="w-full h-auto object-cover rounded-t-lg">
+                        <div class="p-4">
+                            <h3 class="font-bold text-xl mb-2 section-heading">Ceremonia al Aire Libre</h3>
+                            <p class="text-gray-700 text-sm">Un ambiente romántico bajo el cielo de Yucatán.</p>
+                        </div>
+                    </div>
+                    <div class="rounded-lg overflow-hidden shadow-lg">
+                        <img src="https://suytunchenhacienda.com/wp-content/uploads/2019/04/4.jpg" alt="[Image of Recepción en Salón Colonial]" class="w-full h-auto object-cover rounded-t-lg">
+                        <div class="p-4">
+                            <h3 class="font-bold text-xl mb-2 section-heading">Elegancia Colonial</h3>
+                            <p class="text-gray-700 text-sm">Celebraciones sofisticadas en nuestros salones.</p>
+                        </div>
+                    </div>
+                    <div class="rounded-lg overflow-hidden shadow-lg">
+                        <img src="https://suytunchenhacienda.com/wp-content/uploads/2019/04/5.jpg" alt="[Image of Detalles de Decoración]" class="w-full h-auto object-cover rounded-t-lg">
+                        <div class="p-4">
+                            <h3 class="font-bold text-xl mb-2 section-heading">Detalles que Enamoran</h3>
+                            <p class="text-gray-700 text-sm">Cada rincón diseñado para tu día especial.</p>
+                        </div>
+                    </div>
+                </div>
+                <a href="#galeria" class="button-primary px-8 py-3 rounded-full text-lg font-medium shadow-lg hover:shadow-xl">Ver Galería Completa de Bodas</a>
+            </div>
+        </section>
+
+        <section id="bodas-testimonios" class="py-16 md:py-24 header-bg text-white text-center">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Lo que Dicen Nuestros Novios</h2>
+                <div class="delimiter mx-auto bg-white mb-8"></div>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                    <div class="bg-white text-gray-800 p-8 rounded-lg shadow-md">
+                        <p class="italic text-lg mb-4">"Nuestra boda en Hacienda Suytunchen fue un sueño hecho realidad. La belleza del lugar y la atención del equipo superaron todas nuestras expectativas. ¡Fue mágico!"</p>
+                        <p class="font-semibold">- Ana y Carlos, Enero 2024</p>
+                    </div>
+                    <div class="bg-white text-gray-800 p-8 rounded-lg shadow-md">
+                        <p class="italic text-lg mb-4">"Desde el primer contacto hasta el día de la boda, todo fue perfecto. La hacienda es impresionante y el servicio impecable. ¡Totalmente recomendable!"</p>
+                        <p class="font-semibold">- Sofía y Diego, Marzo 2023</p>
+                    </div>
+                </div>
+                <a href="#bodas-testimonios" class="button-secondary mt-12 px-8 py-3 rounded-full text-lg font-medium shadow-lg hover:shadow-xl">Ver Más Testimonios</a>
+            </div>
+        </section>
+
+        <section id="contacto" class="py-16 md:py-24 bg-gray-100">
+            <div class="container mx-auto px-4 flex flex-col md:flex-row gap-12">
+                <div class="md:w-1/2">
+                    <h2 class="text-3xl md:text-4xl font-bold mb-4 section-heading">Contáctanos para tu Boda</h2>
+                    <div class="delimiter mx-auto md:mx-0 mb-8"></div>
+                    <form action="#" method="post" class="space-y-6">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <input type="text" name="your-name" placeholder="Tu Nombre Completo" required class="p-3 border border-gray-300 rounded-md w-full focus:outline-none focus:ring-2 focus:ring-red-300">
+                            <input type="email" name="your-email" placeholder="Tu Email" required class="p-3 border border-gray-300 rounded-md w-full focus:outline-none focus:ring-2 focus:ring-red-300">
+                        </div>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <input type="tel" name="tel-688" placeholder="Teléfono de Contacto (+52 999 255 7812)" value="+52 999 255 7812" class="p-3 border border-gray-300 rounded-md w-full focus:outline-none focus:ring-2 focus:ring-red-300">
+                            <select name="menu-432" class="p-3 border border-gray-300 rounded-md w-full bg-white focus:outline-none focus:ring-2 focus:ring-red-300">
+                                <option value="Consulta General">Consulta General</option>
+                                <option value="Cotización para Boda">Cotización para Boda</option>
+                                <option value="Agenda una Visita">Agenda una Visita</option>
+                                <option value="Hospedaje">Hospedaje</option>
+                                <option value="Otro">Otro</option>
+                            </select>
+                        </div>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <input type="date" name="date-boda" placeholder="Fecha Estimada de Boda (Opcional)" class="p-3 border border-gray-300 rounded-md w-full focus:outline-none focus:ring-2 focus:ring-red-300">
+                            <input type="number" name="num-invitados" placeholder="No. de Invitados (Opcional)" min="1" class="p-3 border border-gray-300 rounded-md w-full focus:outline-none focus:ring-2 focus:ring-red-300">
+                        </div>
+                        <textarea name="your-message" rows="6" placeholder="Tu Mensaje" class="p-3 border border-gray-300 rounded-md w-full focus:outline-none focus:ring-2 focus:ring-red-300"></textarea>
+                        <button type="submit" class="button-primary px-8 py-3 rounded-full text-lg font-medium shadow-lg hover:shadow-xl flex items-center justify-center">
+                            <i class="fa fa-rocket mr-2"></i> Enviar Consulta
+                        </button>
+                    </form>
+                </div>
+                <div class="md:w-1/2">
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <h3 class="text-xl font-bold mb-4 section-heading">Síguenos en Facebook</h3>
+                        <div class="fb-page" data-href="https://www.facebook.com/SuytunchenHacienda/" data-tabs="timeline" data-width="500" data-height="400" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true">
+                            <blockquote cite="https://www.facebook.com/SuytunchenHacienda/" class="fb-xfbml-parse-ignore">
+                                <a href="https://www.facebook.com/SuytunchenHacienda/">Suytunchen Hacienda</a>
+                            </blockquote>
+                        </div>
+                        <div id="fb-root"></div>
+                        <script async defer crossorigin="anonymous" src="https://connect.facebook.net/es_ES/sdk.js#xfbml=1&version=v5.0"></script>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-16 md:py-24 bg-white">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl md:text-4xl font-bold mb-8 text-center section-heading">Encuéntranos en el Mapa</h2>
+                <div class="rounded-lg overflow-hidden shadow-lg" style="height: 500px; width: 100%;">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3725.337777478059!2d-89.65839018495092!3d20.97960688601672!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f56740b7d3f923d%3A0x7d3e9c5f0f3e6a0!2sHacienda%20Suytunchen!5e0!3m2!1ses-419!2smx!4v1678900000000!5m2!1ses-419!2smx"
+                        width="100%"
+                        height="100%"
+                        style="border:0;"
+                        allowfullscreen=""
+                        loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"
+                    ></iframe>
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer-bg text-white py-12">
+            <div class="container mx-auto px-4 grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div class="col-span-1">
+                    <img src="https://suytunchenhacienda.com/wp-content/uploads/2019/03/logo-Suytunchen-white2.png" alt="Hacienda Suytunchen Logo Blanco" class="w-auto h-auto max-w-[200px] rounded-md">
+                </div>
+                <div class="col-span-1">
+                    <h3 class="text-lg font-bold mb-4">Contacto</h3>
+                    <ul class="space-y-2 text-sm">
+                        <li><i class="fa fa-map-marker-alt mr-2"></i>Suytunchén, Yuc.</li>
+                        <li><i class="fa fa-phone mr-2"></i>+52 999 255 7812</li>
+                        <li><i class="fa fa-envelope mr-2"></i><a href="mailto:info@suytunchenhacienda.com" class="hover:underline">info@suytunchenhacienda.com</a></li>
+                        <li><i class="fab fa-whatsapp mr-2"></i><a href="https://wa.me/529992557812?text=Hola!%20Me%20interesa%20saber%20más%20sobre%20Hacienda%20Suytunchen%20para%20un%20evento." target="_blank" class="hover:underline">Enviar WhatsApp</a></li>
+                    </ul>
+                </div>
+                <div class="col-span-1">
+                    <h3 class="text-lg font-bold mb-4">Menú Principal</h3>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="#inicio" class="hover:underline">Inicio</a></li>
+                        <li><a href="#nosotros" class="hover:underline">Nosotros</a></li>
+                        <li><a href="#bodas" class="hover:underline">Bodas</a></li>
+                        <li><a href="#otros-eventos" class="hover:underline">Otros Eventos & Hospedaje</a></li>
+                        <li><a href="#galeria" class="hover:underline">Galería</a></li>
+                        <li><a href="#contacto" class="hover:underline">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="col-span-1">
+                    <h3 class="text-lg font-bold mb-4">Información</h3>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="#" class="hover:underline">Aviso de Privacidad</a></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+
+        <div class="copyright-bg text-gray-400 py-6 text-sm">
+            <div class="container mx-auto px-4 flex flex-col md:flex-row justify-between items-center">
+                <div class="flex space-x-4 mb-4 md:mb-0">
+                    <a href="https://www.facebook.com/SuytunchenHacienda/" target="_blank" class="hover:text-gray-300"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/suytunchenhacienda/" target="_blank" class="hover:text-gray-300"><i class="fab fa-instagram"></i></a>
+                </div>
+                <div class="text-center md:text-right">
+                    Copyright 2019 - Diseño por <a href="https://bizplin.com.mx/" target="_blank" class="text-gray-300 hover:underline">Bizplin</a>
+                </div>
+            </div>
+        </div>
+
+        <a href="https://wa.me/529992557812?text=Hola!%20Me%20interesa%20saber%20más%20sobre%20Hacienda%20Suytunchen%20para%20un%20evento." target="_blank" class="whatsapp-float">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+
+        <button onclick="window.scrollTo({ top: 0, behavior: 'smooth' })" class="fixed bottom-8 right-8 bg-gray-700 text-white p-4 rounded-full shadow-lg hover:bg-gray-800 transition-all duration-300">
+            <i class="fa fa-angle-up"></i>
+        </button>
+    </div>
+</body>
+</html>
